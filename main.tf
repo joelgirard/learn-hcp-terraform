@@ -17,6 +17,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
+/*
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.19.0"
@@ -42,4 +43,5 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = var.instance_name
   }
+*/
 }
